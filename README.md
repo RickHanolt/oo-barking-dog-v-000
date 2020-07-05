@@ -28,11 +28,32 @@ woof!
 
 Run the test suite to get started. You'll be writing all your code in the `lib/dog.rb` file.
 
-1. Define a class, called Dog. 
-2. Write a setter method, `.name=`, that allows you to give a dog a name. 
-3. Write a getter method, `.name` that returns an individual dog's name. 
-4. Write a method, `.bark`, that `puts` "woof!" when called on an instance of Dog. 
+1. Define a class, called Dog.
+2. Write a setter method, `.name=`, that allows you to give a dog a name.
+3. Write a getter method, `.name` that returns an individual dog's name.
+4. Write a method, `.bark`, that `puts` "woof!" when called on an instance of Dog.
 
 
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/oo-barking-dog' title='Barking Dog'>Barking Dog</a> on Learn.co and start learning to code for free.</p>
+
+class Dog
+
+  def initialize(bark = "woof!")
+    @name = name
+    @bark = bark
+  end
+
+  def name
+    @name
+  end
+
+  def bark
+    puts "woof!"
+  end
+
+  def name=(new_name)
+    @name = new_name
+  end
+
+end
